@@ -1,0 +1,165 @@
+/* Starter CSS */
+
+* {
+    box-sizing: border-box; /* because it’s 2019, jen simmons */
+    padding: 0;
+    margin: 0;
+}
+html {
+    color:whitesmoke;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background: deepskyblue;
+    margin:0;
+    font-family: sans-serif;
+    }
+    
+img {
+    display: block;
+    max-width: 100%;
+    }
+    
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: deepskyblue;
+}
+
+.logo a {
+    color: rgb(28, 24, 22);
+}
+
+.logo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo,
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.logo a,
+.main-nav a {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.45rem;
+}
+
+.main-nav a:hover {
+    color: pink;
+}
+
+.main-nav {
+    background-color: rgb(235, 98, 19);
+}
+
+.hero {
+    background: url("https://i.pinimg.com/564x/ae/73/bc/ae73bc5206a59c8bc8b1c217dd5a00cb.jpg")center;
+    background-size: cover;
+    padding: 2rem 2rem;
+}
+
+.inner-hero h1{
+    color: black;
+    font-size: 6rem;
+    line-height: 11rem;
+}
+
+.inner-hero p{
+    color: black;
+    font-size: 3rem;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-width: 480px;
+    max-width: 400px;
+    border-radius: 0.5rem;
+    border: 1px;
+    margin: 10px;
+    position:relative;
+    top: 0;
+}
+
+.cardphoto {
+    overflow: hidden;
+    max-width: 30rem;
+}
+
+.article {
+    padding: 2.5rem;
+    flex: 1;
+}
+
+.cardH1 {
+    font-size: 2rem;
+    margin: 0;
+    color: black;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: black;
+}
+
+
+
+@media only screen and (min-width: 35em) {
+    .main-nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 60em) {
+    .main-nav {
+        justify-content: center;
+    }
+}
+
+    
+    /* This is the CSS markup for commenting */
+    
+    /* A one-line comment */
+    
+    /*
+    A comment
+    which stretches
+    over several
+    lines
+    */
+    
+    /* The comment below is used to
+       disable specific styling */
+    
+    /*
+    span {
+      color: blue;
+      font-size: 1.5em;
+    }
+    */
+    /* highlight the item and use Command + slash to comment something out. */
