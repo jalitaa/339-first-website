@@ -127,6 +127,18 @@ img {
     color: black;
 }
 
+.photo-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 240px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 @media only screen and (min-width: 35em) {
